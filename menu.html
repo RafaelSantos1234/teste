@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="menu.css">
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+            $(function(){
+               $(window).scroll(function(){
+                  if($(this).scrollTop() > 176){
+                      $("#menu").addClass("fixo");
+                  }else{
+                     $("#menu").removeClass("fixo");
+                  }
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="checkbox" id="check">
+        <nav id="menu">
+            <label for="check" id="btn">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+								s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+						</svg>
+            </label>
+            <ul>
+                <li><a href="#" target="_self">Desktop</a></li>
+                <li><a href="#" target="_self">Nets/Nots</a></li>
+                <li><a href="#" target="_self">Celulares</a></li>
+                <li><a href="#" target="_self">Tablets</a></li>
+                <li><a href="#" target="_self">Impressoras</a></li>
+                <li><a href="#" target="_self">Hardware</a></li>
+                <li class="dropdown"><a href="#" target="_self">Periféricos</a>
+                <nav class="drop">
+                    <a href="#" target="_self">Som</a>
+                    <a href="#" target="_self">Pen Drive</a>
+                    <a href="#" target="_self">HD Externo</a>
+                    <a href="#" target="_self">Mesa Digital</a>
+                    <a href="#" target="_self">Webcam</a>
+                    <a href="#" target="_self">Gabinete</a>
+                    <a href="#" target="_self">Adaptadores</a>
+                    <a href="#" target="_self">Cabos</a>
+
+                 </nav>
+                </li>
+            </ul>
+        </nav>
+       
+    </body>
+</html>

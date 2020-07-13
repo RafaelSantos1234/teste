@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+}
+
+#check,#btn{display: none;}
+
+
+li{
+    list-style: none;
+    float: left;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 17pt;
+
+}
+
+.fixo{
+    top:0px;
+    z-index: 999;
+    position: fixed;
+}
+nav ul{
+     margin-left:10%;
+
+}
+#menu{
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+nav, a{
+   background: orangered;
+
+}
+
+.dropdown{
+    position: relative;
+}
+
+.drop{
+    position: absolute;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 5px black;
+    display: none;
+}
+
+.dropdown:hover .drop{
+    display:inline-block;
+}
+
+a:hover{
+    background: rgba(225,225,225,0.3);
+}
+
+@media (max-width:700px){
+   nav ul{
+        margin-left: 0px;
+       display: none;
+    }
+    
+    li{
+        clear: both;
+    }
+    
+    .dropdown:hover .drop{
+    display:inline-block;
+}
+    .drop{
+        top:-300px;
+    }
+    
+    #btn{display: block;}
+    
+    #check:checked ~ nav ul{
+        display: block;
+    }
+    
+    #menu{text-align: left;}
+   
+}
+.svg-icon {
+  width: 3em;
+  height: 2em;
+  cursor: pointer;
+
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: white;
+}
+
+.svg-icon circle {
+  stroke: white;
+  stroke-width: ;
+}
+
+
+
